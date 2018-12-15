@@ -1,0 +1,45 @@
+{
+    "name": "sauce.js-cli",
+    "version": "0.0.0",
+    "description": "CLI for SAUCE parser for Node.js",
+    "preferGlobal": true,
+    "bin": {
+        "sauce": "dist/index.js"
+    },
+    "scripts": {
+        "start": "./node_modules/ts-node/dist/bin.js ./src/index.ts",
+        "build": "tsc",
+        "lint": "tslint --project tsconfig.json --type-check; markdownlint README.md CHANGELOG.md",
+        "prepublishOnly": "npm run lint && npm run build"
+    },
+    "files": [
+        "dist/"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nrlquaker/sauce.js-cli.git"
+    },
+    "keywords": [
+        "sauce",
+        "ansii-art",
+        "ascii-art"
+    ],
+    "author": "nrlquaker",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nrlquaker/sauce.js-cli/issues"
+    },
+    "homepage": "https://github.com/nrlquaker/sauce.js-cli#readme",
+    "dependencies": {
+        "sauce.js": "^1.0.2",
+        "yargs": "^12.0.5"
+    },
+    "devDependencies": {
+        "@types/node": "^10.12.18",
+        "@types/yargs": "^12.0.4",
+        "markdownlint-cli": "^0.13.0",
+        "ts-node": "^7.0.1",
+        "tslint": "^5.12.0",
+        "typescript": "^3.2.2"
+    }
+}

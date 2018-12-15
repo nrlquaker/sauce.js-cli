@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "declaration": false,
+        "sourceMap": false,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "removeComments": false,
+        "importHelpers": false,
+        "noEmitHelpers": false,
+        "strict": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "preserveConstEnums": true,
+        "moduleResolution": "node",
+        "pretty": true
+    },
+    "include": [
+        "./src"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

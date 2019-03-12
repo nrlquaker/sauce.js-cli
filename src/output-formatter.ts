@@ -28,7 +28,7 @@ export default class OutputFormatter {
     }
 
     private formatDate(date: Date): string {
-        const month = this.addLeadingZero(date.getMonth())
+        const month = this.addLeadingZero(date.getMonth() + 1)
         const day = this.addLeadingZero(date.getDate())
         return `${date.getFullYear()}/${month}/${day}`
     }
